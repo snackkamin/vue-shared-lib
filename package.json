@@ -1,0 +1,22 @@
+{
+  "name": "vue-shared-lib",
+  "version": "1.0.0",
+  "main": "dist/vue-shared-lib.umd.js",
+  "module": "dist/vue-shared-lib.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "vue": "^3.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
