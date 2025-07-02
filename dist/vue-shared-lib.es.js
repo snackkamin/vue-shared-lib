@@ -1,10 +1,14 @@
-import { defineComponent as e, openBlock as o, createElementBlock as t } from "vue";
-const n = { class: "text-red-500" }, m = /* @__PURE__ */ e({
-  __name: "MyComponent",
-  setup(r) {
-    return (c, s) => (o(), t("div", n, "Hello from shared lib"));
-  }
-});
+import { openBlock as n, createElementBlock as s } from "vue";
+const _ = (t, e) => {
+  const o = t.__vccOpts || t;
+  for (const [c, r] of e)
+    o[c] = r;
+  return o;
+}, a = {}, d = { class: "my-10 w-48 text-red-400 border" };
+function f(t, e) {
+  return n(), s("div", d, "test lib");
+}
+const l = /* @__PURE__ */ _(a, [["render", f]]);
 export {
-  m as MyComponent
+  l as MyComponent
 };
